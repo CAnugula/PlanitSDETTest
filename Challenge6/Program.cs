@@ -8,7 +8,7 @@ namespace Challenge6
         {
             // Get sample mock data
             var mockData = MockData.GetPersons();
-            var peopleManager = new PeopleManager(mockData);
+            IPeopleManager peopleManager = new PeopleManager(mockData);
 
             // Get all duplicates by name
             var duplicates = peopleManager.GetDuplicates();

@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace Challenge6
 {
-    public class PeopleManager
+    public class PeopleManager : IPeopleManager
     {
         private List<Person> _persons;
         public List<Person> Persons
@@ -18,7 +18,7 @@ namespace Challenge6
             _persons = persons;
         }
 
-      
+
         public List<Person> GetDuplicates()
         {
             return _persons
